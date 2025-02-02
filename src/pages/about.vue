@@ -17,11 +17,11 @@ interface WorkItem {
 
 const spotifyEmbeds: spotifyEmbed[] = [
   {
-    uri: "track/6oilrypHWm0iylwgX6ujQc",
+    uri: "https://open.spotify.com/embed/track/6oilrypHWm0iylwgX6ujQc?utm_source=generator",
     theme: "dark"
   },
   {
-    uri: "episode/7makk4oTQel546B0PZlDM5",
+    uri: "https://open.spotify.com/embed/track/7JY1LciLO1MpI3XikSUgzy?utm_source=generator",
     theme: "dark"
   }
 ];
