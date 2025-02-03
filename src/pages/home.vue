@@ -93,7 +93,7 @@ const worksDisplayData = ref<WorkDisplay[]>([
           </div>
           <arch-animation color="#121212">
             <button class="connectBtn">
-              {{ t("home.button") }}
+              {{ t("global.about") }}
               <img
                 class="connectBtnImg"
                 src="../assets/images/icon/link.png"

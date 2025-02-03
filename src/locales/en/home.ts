@@ -1,17 +1,18 @@
 export default {
-  hello: "Hey 'all ",
+  hello: "Hey, everyone!",
   helloTitle: "I'm Luna",
-  im: " I'm a",
-  jobTitle: " Front-end Engineer",
+  im: "I am",
+  jobTitle: "Frontend Engineer",
   openingText:
-    "  that's ready to help you make the experiences you've been missing!",
-  button: "Email Me",
-  jobTitleAt: "UX Designer at ",
-  company: "Pendo.io",
-  workLocation: "Based in North Carolina",
-  name: "HOHO",
+    "Since transitioning in October 2023, I have been passionate about web design and development, with a solid technical foundation. I am dedicated to exploring and refining various programming languages and frameworks to continuously enhance development efficiency and user experience. I am proficient in HTML, CSS, JavaScript, TypeScript, Vue, Vuex, and React, and I have expertise in Git version control, enabling effective collaboration and project management. I continuously learn and optimize development processes, striving to create high-performance, intuitive, and user-friendly web applications.",
+  jobTitleAt: "Frontend Engineer at ",
+  company: "Honest Design",
+  workLocation: "Currently based in West District, Taichung City",
+  name: "Luna",
   skills: "Skills I have",
-  narrative: "Take a look at some of my work!",
+  narrative: "Take a look at my work!",
   connect:
-    "Explore experiences crafted with precision and passion, aimed at delivering seamless experiences that are always fun and effective."
+    "Applying my knowledge to create interactive web experiences for users!",
+  "header.title": "SU",
+  "header.title2": "LUNA"
 };

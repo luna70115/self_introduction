@@ -1,8 +1,8 @@
 export default {
-  text: "“Try to create. I want to tell people to create. Just start by creating your day. Then create your life.”",
-  signature: "- Prince, The Beautiful Ones",
-  made: "Made in Webflow | 2024",
-  chat: "   Let's Chat ",
-  email: "Email Me",
+  text: "“It doesn’t matter how slowly you go as long as you do not stop.”",
+  signature: "- Andy Warhol",
+  made: "Created by Luna | 2025",
+  chat: "Let's chat",
+  email: "Send me an email",
   aboutMe: "About Me"
 };

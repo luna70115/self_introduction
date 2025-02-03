@@ -58,7 +58,7 @@ const worksData = ref<WorkItem[]>([
             href="https://www.linkedin.com/in/hui-xiang-su-a849a0269/?trk=public-profile-join-page"
             target="_blank"
           >
-            {{ t("about.button") }}
+            {{ t("global.about") }}
             <img
               class="about-left--img"
               src="../assets/images/icon/link.png"

@@ -3,7 +3,6 @@ export default {
   im: " 我是一名",
   jobTitle: "前端工程師",
   openingText: "我已經準備好使用我的技術加入團隊創造我的價值。",
-  button: "聯絡我",
   about: "Happy to see you",
   "introductionCard.title": "電影清單",
   "introductionCard.narrative": "我的人生電影清單",

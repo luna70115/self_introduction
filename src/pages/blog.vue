@@ -23,7 +23,7 @@ const { t } = useI18n();
       href="https://www.linkedin.com/in/hui-xiang-su-a849a0269/?trk=public-profile-join-page"
       target="_blank"
     >
-      {{ t("blog.button") }}
+      {{ t("global.about") }}
       <img class="connectBtnImg" src="../assets/images/icon/link.png" alt="" />
     </a>
   </section>
