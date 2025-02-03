@@ -6,6 +6,7 @@ defineProps<{
   text: string;
   date: string;
   img: string;
+  url: string;
 }>();
 </script>
 
@@ -16,7 +17,7 @@ defineProps<{
     border-radius="8px"
     :archHeight="0.1"
   >
-    <div class="contentCard">
+    <a class="contentCard" :href="url" target="_blank">
       <img class="contentCard-img" :src="img" alt="" />
       <div class="contentCard-block">
         <h1 class="contentCard-title">{{ title }}</h1>
@@ -24,7 +25,7 @@ defineProps<{
         <p class="contentCard-text">{{ text }}</p>
         <p class="contentCard-date">{{ date }}</p>
       </div>
-    </div>
+    </a>
   </arch-animation>
 </template>
 

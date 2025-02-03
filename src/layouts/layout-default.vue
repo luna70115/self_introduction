@@ -97,12 +97,16 @@ const toBlog = () => {
         </teleport>
       </div>
     </div>
-    <div class="layout-default-suspension">
+    <a
+      class="layout-default-suspension"
+      href="https://www.linkedin.com/in/hui-xiang-su-a849a0269/?trk=public-profile-join-page"
+      target="_blank"
+    >
       <div class="layout-default-suspensionBar">
         <p>L</p>
-        <p class="layout-default-suspensionBar--text"></p>
+        <p class="layout-default-suspensionBar--text">Luna</p>
       </div>
-    </div>
+    </a>
     <slot />
     <section><FooterChat :title="'Hello'" /></section>
   </div>

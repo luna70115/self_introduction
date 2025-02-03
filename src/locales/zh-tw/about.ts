@@ -1,8 +1,8 @@
 export default {
   helloTitle: "嘿，大家好！我是 Luna",
   im: " 我是一名",
-  jobTitle: " 使用者體驗設計師",
-  openingText: " 準備好幫助你打造前所未有的體驗！",
+  jobTitle: "前端工程師",
+  openingText: "我已經準備好使用我的技術加入團隊創造我的價值。",
   button: "聯絡我",
   about: "Happy to see you",
   "introductionCard.title": "電影清單",

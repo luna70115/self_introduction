@@ -100,12 +100,16 @@ const toBlog = () => {
           </span>
           <q-icon name="arrow_forward" color="#ffffff"></q-icon>
         </p>
-        <p class="optionFields-link" @click="toHome">
+        <a
+          class="optionFields-link"
+          href="https://www.linkedin.com/in/hui-xiang-su-a849a0269/?trk=public-profile-join-page"
+          target="_blank"
+        >
           <span>
             {{ t("global.linkedin") }}
           </span>
           <q-icon name="open_in_new" color="#ffffff"></q-icon>
-        </p>
+        </a>
       </div>
     </div>
   </q-dialog>

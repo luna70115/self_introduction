@@ -141,12 +141,14 @@
       position: absolute;
       width: 120%;
       height: 100%;
+      top: 72px;
     }
 
     &--img {
       width: 20vw;
-      //height: 80%;
-      @include desktop {
+      border: solid 2px #ffffff;
+      border-radius: 10px;
+            @include desktop {
         width: 14vw;
       }
     }

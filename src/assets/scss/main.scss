@@ -33,6 +33,22 @@ body {
     padding: 64px 24px;
   }
 }
+
+.grid-col {
+  display: grid !important;
+  align-items: flex-start !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  @include desktop {
+    grid-template-columns: none;
+  }
+}
+.grid-col-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-three {
+  grid-template-columns: repeat(3, 1fr);
+}
 .connectBtn {
   display: flex;
   z-index: 1;
@@ -48,6 +64,7 @@ body {
   position: relative;
   color: var(--white);
   background: var(--primary-100);
+  width: 150px;
   @include smallTablet {
     width: 100%;
     justify-content: center;
@@ -216,13 +233,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     font-size: 28px;
     gap: 20px;
-    background: var(--primary-200);
-    color: var(--white);
     height: 160px;
     width: 50px;
-
+    background: var(--primary-200);
+    color: var(--white);
     &--text {
       display: inline-block;
       transform: rotate(-90deg);

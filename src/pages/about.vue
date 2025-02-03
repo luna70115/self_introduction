@@ -6,8 +6,7 @@ import getImageUrl from "@/utils/getImageUrl";
 import { useI18n } from "@/i18n";
 import { Vue3Marquee } from "vue3-marquee";
 import { ref } from "vue";
-import SpotifyIframe from "@/components/spotify-iframe.vue";
-import { spotifyEmbed } from "@/types/global";
+
 const { t } = useI18n();
 interface WorkItem {
   title: string;
@@ -15,31 +14,24 @@ interface WorkItem {
   date: string;
 }
 
-const spotifyEmbeds: spotifyEmbed[] = [
-  {
-    uri: "https://open.spotify.com/embed/track/6oilrypHWm0iylwgX6ujQc?utm_source=generator",
-    theme: "dark"
-  },
-  {
-    uri: "https://open.spotify.com/embed/track/7JY1LciLO1MpI3XikSUgzy?utm_source=generator",
-    theme: "dark"
-  }
-];
-
 const worksData = ref<WorkItem[]>([
-  { title: "OOOXXX |", text: "XXXOOO", date: "2025" },
-  { title: "OOOXXX |", text: "XXXOOO", date: "2025" },
-  { title: "OOOXXX |", text: "XXXOOO", date: "2025" },
-  { title: "OOOXXX |", text: "XXXOOO", date: "2025" },
-  { title: "OOOXXX |", text: "XXXOOO", date: "2025" },
-  { title: "OOOXXX |", text: "XXXOOO", date: "2025" }
+  { title: "刺激1995 |", text: "The Shawshank Redemption", date: "1994" },
+  { title: "令人討厭的松子的一生 |", text: "嫌われ松子の一生", date: "2006" },
+  { title: "初戀那件小事 |", text: "First Love", date: "2010" },
+  { title: "雲端情人 |", text: "Her", date: "2013" },
+  { title: "真愛每一天 |", text: "About Time", date: "2013" },
+  {
+    title: "如果這世界貓消失了 |",
+    text: "世界から猫が消えたなら",
+    date: "2016"
+  }
 ]);
 </script>
 
 <template>
   <div class="about">
     <div class="about-avatar">
-      <img class="about-avatar--img" src="@/assets/images/avatar.jpg" alt="" />
+      <img class="about-avatar--img" src="../assets/images/luna.png" alt="" />
     </div>
     <div class="about-marquee">
       <Vue3Marquee>
@@ -61,24 +53,25 @@ const worksData = ref<WorkItem[]>([
               {{ t("about.openingText") }}
             </p>
           </div>
-          <button class="connectBtn">
+          <a
+            class="connectBtn"
+            href="https://www.linkedin.com/in/hui-xiang-su-a849a0269/?trk=public-profile-join-page"
+            target="_blank"
+          >
             {{ t("about.button") }}
             <img
               class="about-left--img"
               src="../assets/images/icon/link.png"
               alt=""
             />
-          </button>
+          </a>
         </div>
       </div>
       <div class="about-right">
         <header-host>
           <img
             class="about-right--img"
-            srcset="
-              https://cdn.prod.website-files.com/63c96fbd3f3abb1db1cbcab9/66f17147b276d2788ca91113_Purple%20Card%202-p-500.png 500w,
-              https://cdn.prod.website-files.com/63c96fbd3f3abb1db1cbcab9/66f17147b276d2788ca91113_Purple%20Card%202.png       768w
-            "
+            src="../assets/images/luna.png"
             alt=""
           />
         </header-host>
@@ -117,28 +110,55 @@ const worksData = ref<WorkItem[]>([
           :fontSize="'8vw'"
         />
       </div>
-      <div class="spotify">
-        <spotify-iframe
-          v-for="({ uri, theme }, index) in spotifyEmbeds"
-          :key="`${index}-${uri}`"
-          :song-url="uri"
-          :theme="theme"
-          class="spotify-block"
-        ></spotify-iframe>
-        <!--        <div-->
-        <!--          v-for="(item, index) in spotifyEmbedUrl"-->
-        <!--          :key="index"-->
-        <!--          class="spotify-block"-->
-        <!--        >-->
-        <!--          <iframe-->
-        <!--            class="spotify-iframe"-->
-        <!--            :src="item"-->
-        <!--            frameborder="0"-->
-        <!--            allowfullscreen-->
-        <!--            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"-->
-        <!--          >-->
-        <!--          </iframe>-->
-        <!--        </div>-->
+      <div class="spotify grid-col grid-col-two">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/6ppefZt5uQ62aHAfSa1Jx9?utm_source=generator"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/3tgWMPOY4stCdKYj5NjrAe?utm_source=generator"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="spotify grid-col grid-col-three">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/1MYK39bbxvYX0LzS30mlqU?utm_source=generator"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/56wDFSIa9Tr7zbEXUVMwjP?utm_source=generator"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/5HsSsEeP3hU9QSfHZrzbtA?utm_source=generator"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </div>
     </section>
     <section class="card-pd">
@@ -155,11 +175,6 @@ const worksData = ref<WorkItem[]>([
           :title="t('about.introductionCard.gameTitle.one')"
           :text="t('about.introductionCard.gameText.one')"
           :img="getImageUrl('game/lol.png')"
-        />
-        <gameCard
-          title="OOXX"
-          text="xxoo"
-          :img="getImageUrl('worksDisplay/worksDisplay.jpg')"
         />
       </div>
     </section>

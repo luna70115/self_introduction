@@ -11,12 +11,12 @@ import ArchAnimation from "@/components/arch-animation.vue";
 import FontMoveAnimation from "@/components/font-move-animation.vue";
 const { t } = useI18n();
 const images = ref<string[]>([
-  new URL("@/assets/images/icon/vue.png", import.meta.url).href,
-  new URL("@/assets/images/icon/react.png", import.meta.url).href,
-  new URL("@/assets/images/icon/js.png", import.meta.url).href,
-  new URL("@/assets/images/icon/css.png", import.meta.url).href,
-  new URL("@/assets/images/icon/html.png", import.meta.url).href,
-  new URL("@/assets/images/icon/typescript.png", import.meta.url).href
+  getImageUrl("icon/vue.png"),
+  getImageUrl("icon/react.png"),
+  getImageUrl("icon/js.png"),
+  getImageUrl("icon/css.png"),
+  getImageUrl("icon/html.png"),
+  getImageUrl("icon/typescript.png")
 ]);
 const worksDisplayData = ref<WorkDisplay[]>([
   {
@@ -116,14 +116,7 @@ const worksDisplayData = ref<WorkDisplay[]>([
       </div>
       <div class="home-right">
         <header-host>
-          <img
-            class="home-right--img"
-            srcset="
-              https://cdn.prod.website-files.com/63c96fbd3f3abb1db1cbcab9/66f17147b276d2788ca91113_Purple%20Card%202-p-500.png 500w,
-              https://cdn.prod.website-files.com/63c96fbd3f3abb1db1cbcab9/66f17147b276d2788ca91113_Purple%20Card%202.png       768w
-            "
-            alt=""
-          />
+          <img class="home-right--img" src="../assets/images/luna.png" alt="" />
         </header-host>
       </div>
     </section>

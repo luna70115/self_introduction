@@ -1,4 +1,6 @@
 .about {
+  padding-top: 260px;
+
   @include desktop {
     padding-top: 100px;
   }
@@ -90,6 +92,7 @@
     right: 200px;
     bottom: 218px;
     z-index: 99;
+    animation: float 3s ease-in-out infinite;
     @include desktop {
       display: none;
     }
@@ -101,6 +104,8 @@
 
     &--img {
       width: 200px;
+      border: solid 2px #ffffff;
+      border-radius: 10px;
     }
   }
   &-introduce {
