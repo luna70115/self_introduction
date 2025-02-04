@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => {
   console.log("載入的 VITE 環境變數:", viteEnv);
 
   return {
-    base: "./",
+    base: "/self_introduction/",
     envDir: "./env", // 指定環境變數文件的目錄
     plugins: [
       // Vue 插件，用於支援 Vue 單文件組件
