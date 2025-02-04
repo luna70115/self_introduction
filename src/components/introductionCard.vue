@@ -73,14 +73,14 @@ defineProps<{
     font-family: var(--fontConcertOne);
     color: var(--white);
     letter-spacing: 0.5px;
-    font-size: 32px;
+    font-size: 2vw;
     font-style: italic;
     line-height: 1.1;
   }
   &-content {
     color: var(--low-contrast-text);
     letter-spacing: 0.3px;
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: 500;
     line-height: 1.5;
   }

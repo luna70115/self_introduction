@@ -77,7 +77,7 @@ const worksData = ref<WorkItem[]>([
         </header-host>
       </div>
     </section>
-    <section class="card-pd">
+    <section class="card-pd page-container">
       <div class="about-introduce">
         <IntroductionCard
           :title="t('about.introductionCard.title')"
@@ -161,7 +161,7 @@ const worksData = ref<WorkItem[]>([
         ></iframe>
       </div>
     </section>
-    <section class="card-pd">
+    <section class="card-pd page-container">
       <div>
         <IntroductionCard
           :title="t('about.introductionCard.title.game')"

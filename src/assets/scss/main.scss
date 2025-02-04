@@ -51,26 +51,30 @@ body {
 }
 .connectBtn {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 1;
   letter-spacing: 0.8px;
   border-radius: 8px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 16px 24px;
-  font-size: 20px;
+  padding: 14px 22px;
+  font-size: 1.5vw;
   font-style: italic;
   font-weight: 700;
   line-height: 1.35;
   position: relative;
   color: var(--white);
   background: var(--primary-100);
-  width: 150px;
+  width: 10vw;
   @include smallTablet {
     width: 100%;
     justify-content: center;
   }
+  @include desktop {
+    font-size: 20px;
+  }
 }
 .connectBtnImg {
+  margin-left: 0.5vw;
   width: 30px;
   height: 30px;
 }

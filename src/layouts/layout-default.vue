@@ -50,7 +50,7 @@ const toBlog = () => {
         </arch-animation>
         <arch-animation color="#ffffff" border-radius="8px">
           <a class="layout-default-link" @click="toBlog">
-            {{ t("global.blog") }}</a
+            {{ t("global.share") }}</a
           >
         </arch-animation>
         <arch-animation direction="top" color="#ffffff" border-radius="8px">

@@ -8,7 +8,9 @@
     display: none;
     &--img {
       object-fit: cover;
-      border-radius: 20px;
+      width: 20vw;
+      border: solid 2px #ffffff;
+      border-radius: 10px;
     }
     @include desktop {
       display: flex;
@@ -17,7 +19,6 @@
     }
   }
   &-bar {
-  
     margin-top: 36px;
     @include desktop {
       grid-template-columns: 100%;
@@ -39,7 +40,7 @@
       letter-spacing: 0;
       text-transform: uppercase;
       font-family: var(--fontConcertOne);
-      font-size: 30px;
+      font-size: 3vw;
       font-weight: 700;
       line-height: 1;
       @include desktop {
@@ -65,7 +66,7 @@
 
       &__text {
         color: var(--dark-500);
-        font-size: 18px;
+        font-size: 1.5vw;
       }
       &__bright {
         color: var(--white);
@@ -86,13 +87,13 @@
     }
   }
   &-right {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 200px;
-    bottom: 218px;
-    z-index: 99;
-    animation: float 3s ease-in-out infinite;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 10%;
+        top: 14%;
+        z-index: 99;
+        animation: float 3s ease-in-out infinite;
     @include desktop {
       display: none;
     }
@@ -102,10 +103,12 @@
       height: 130%;
     }
 
-    &--img {
-      width: 200px;
+    &--img {   
       border: solid 2px #ffffff;
       border-radius: 10px;
+      min-width: 180px;
+      max-width: 280px;
+      width: 11vw;
     }
   }
   &-introduce {

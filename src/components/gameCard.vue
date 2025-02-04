@@ -42,7 +42,7 @@ defineProps<{
   &-text {
     color: var(--primary-400);
     letter-spacing: 0.8px;
-    font-size: 20px;
+    font-size: 1.8vw;
     font-style: italic;
     line-height: 1;
     font-family: var(--fontConcertOne);

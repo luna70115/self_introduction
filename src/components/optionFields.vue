@@ -96,7 +96,7 @@ const toBlog = () => {
             ></path>
           </svg>
           <span>
-            {{ t("global.blog") }}
+            {{ t("global.share") }}
           </span>
           <q-icon name="arrow_forward" color="#ffffff"></q-icon>
         </p>
