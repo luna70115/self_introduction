@@ -42,6 +42,9 @@ defineProps<{
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @include smallTablet {
+    gap: 16px;
+  }
   &-title {
     display: flex;
     justify-content: start;
@@ -76,6 +79,9 @@ defineProps<{
     font-size: 2vw;
     font-style: italic;
     line-height: 1.1;
+    @include desktop {
+      font-size: 20px;
+    }
   }
   &-content {
     color: var(--low-contrast-text);
@@ -83,6 +89,12 @@ defineProps<{
     font-size: 1vw;
     font-weight: 500;
     line-height: 1.5;
+    @include desktop {
+      font-size: 20px;
+    }
+    @include smallTablet {
+      font-size: 16px;
+    }
   }
 }
 </style>

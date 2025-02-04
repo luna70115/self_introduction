@@ -45,9 +45,15 @@ body {
 }
 .grid-col-two {
   grid-template-columns: repeat(2, 1fr);
+  @include smallTablet{
+    grid-template-columns:none;
+  }
 }
 .grid-col-three {
   grid-template-columns: repeat(3, 1fr);
+  @include smallTablet{
+    grid-template-columns:none;
+  }
 }
 .connectBtn {
   display: flex;

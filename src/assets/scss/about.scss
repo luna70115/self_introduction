@@ -48,6 +48,7 @@
       }
       &__text {
         color: var(--white);
+       
       }
       &__symbol {
         color: var(--primary-200);
@@ -67,6 +68,9 @@
       &__text {
         color: var(--dark-500);
         font-size: 1.5vw;
+        @include desktop {
+          font-size: 20px;
+        }
       }
       &__bright {
         color: var(--white);
@@ -123,11 +127,15 @@
     @include desktop {
       padding: 24px;
     }
+    
     &--bar {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 14px;
+      @include smallTablet{
+        gap: 8px;
+      }
     }
     &--block {
       display: flex;
@@ -152,6 +160,9 @@
       @include desktop{
         font-size: 18px;
       }
+      @include smallTablet{
+        font-size: 10px;
+      }
     }
     &--text {
       color: var(--low-contrast-text);
@@ -159,6 +170,9 @@
       text-transform: none;
       font-size: 18px;
       margin: 0;
+      @include smallTablet{
+        font-size: 8px;
+      }
     }
   }
   &-marquee {
